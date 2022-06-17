@@ -53,6 +53,8 @@ h5{
 .container{
    display: flex;
    flex-direction: column;
+   align-items: center;
+   justify-content: center;
    padding: 0 35px;
     text-align: center;
    width: 100%;
@@ -74,7 +76,6 @@ margin: 80px 40px;
 
 .tryFreeButton{
     color: white;
-   /* height: 88px; */
     background-color: var(--Blue);
    border-style: none;
    border-radius: 10px;
@@ -97,7 +98,7 @@ margin: 80px 40px;
 .form{
     color: black;
     background-color: white;
-
+    margin-bottom: 40px;
    display: flex;
    flex-direction: column;
    border-radius: 10px;
@@ -105,32 +106,43 @@ margin: 80px 40px;
    gap: 15px;
 }
 
+.div{
+    display: flex;
+    flex-direction: column;
+
+}
 .forminput{
+    
     border: rgba(0, 0, 0, 0.151) solid 2px;
     padding: 15px;
     font-weight: bold;
     border-radius: 5px;
 display: hidden;
 }
-.form label{
+.warning{
     font-size: 10px;
     color: var(--Red);
-    /* position: absolute;
-    right: 30px;
-    top: 70px; */
-  /* margin-bottom: 0px; */
+    padding-top: 5px;
+    text-align: end;
+
     
 }
 
 
 
-.form .claim{
+.claim{
+    cursor: pointer;
 background-color: var(--Green);
 color: white;
 text-transform: uppercase;
 border-style: none;
 border-radius: 10px;
 padding: 20px;
+box-shadow: rgba(0, 0, 0, 0.123) 1px 5px ;
+
+}
+.claim:hover{
+    background-color: hsla(154, 59%, 51%, 0.418);
 }
 
 .form p{
@@ -165,23 +177,25 @@ body{
    
     .container{
         display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
         margin: 100px;
-        text-align: center;
-        width: 100%;
-       width: fit-content;
+        width: fit-content;
        gap: 76px;
+    
        
     }
     
     /* header text */
         .headerText{
-            align-self: center;
-            /* margin-top: 200px; */
+            font-size: 1.5em;
+            align-items: flex-start;
          text-align: left;
     
         }
     
-       
+      
         
      /* form */
     
