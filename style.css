@@ -49,8 +49,12 @@ h5{
     font-weight: 400;
     
 }
+.hidden{
+    display: none;
+}
    
 .container{
+    font-size: 1.01em;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -165,8 +169,13 @@ box-shadow: rgba(0, 0, 0, 0.123) 1px 5px ;
     border-radius: 5px;
 
 }
+.inputError::placeholder{
+color: white;
+}
 
-
+.inputError.email::placeholder{
+color: rgba(238, 8, 8, 0.623);
+}
 
 /* desktop */
 @media  (min-width:700px)  { 
@@ -206,9 +215,7 @@ body{
     }
     
 
-    .hidden{
-        display: none;
-    }
+   
     
    
 

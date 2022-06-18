@@ -1,61 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="/style.css">  
+  <link rel="stylesheet" href="/style.css">
 
-  <title>Frontend Mentor | Intro component with sign up form</title>
+  <title>registration form</title>
 
 </head>
+
 <body>
-  
-<div class="container">
 
-  <div class="headerText">
-    <h1>
-      Learn to code by watching others
-    </h1>
-   
-    <h5>
-      See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-      but understanding how developers think is invaluable.
-    </h5>
-  </div>
+  <div class="container">
 
-<div class="formBox">
+    <div class="headerText">
+      <h1>
+        Learn to code by watching others
+      </h1>
 
-
-    <div class="tryFreeButton">    
-      <h5> <span>Try it free 7 days</span> then $20/mo. thereafter </h5>
-
+      <h5>
+        See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+        but understanding how developers think is invaluable.
+      </h5>
     </div>
 
+    <div class="formBox">
 
-<div class="form ">
- <div class="div">
 
-   <input class="firstName forminput inputError" type="text" placeholder="First name"/>
-   <label class="warning" for="">First name cannot be empty</label>
- </div>
-  <input class="lastName forminput" type="text" placeholder="Last name"/>
-  <label class="warning" for="">First name cannot be empty</label>
+      <div class="tryFreeButton">
+        <h5> <span>Try it free 7 days</span> then $20/mo. thereafter </h5>
 
-  <input class="email forminput" type="email" placeholder="Email Address"/>
-  
-  <input class="password forminput" type="password" placeholder="Password"/>
- 
-  <button  class="claim" type="submit">Claim your free trial</button>
-<p>By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+      </div>
 
-</div>
-</div>
 
-</div>
+      <div class="form ">
+
+        <div class="div">
+          <input class="firstName forminput " type="text" placeholder="First name" />
+          <label class="warning hidden" for="">First name cannot be empty</label>
+        </div>
+
+        <div class="div">
+        <input class="lastName forminput" type="text" placeholder="Last name" />
+        <label class="warning hidden" for="">Last name cannot be empty</label>
+      </div>
+
+      <div class="div">
+        <input class="email forminput" type="email" placeholder="Email Address" />
+        <label class="warning hidden" for="">Looks like this is not an email</label>
+      </div>
+      
+        <div class="div">
+        <input class="password forminput" type="password" placeholder="Password" />
+        <label class="warning hidden" for="">Password cannot be empty</label>
+      </div>
+
+        <button class="claim" type="submit">Claim your free trial</button>
+        <p>By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+
+      </div>
+    </div>
+
+  </div>
 
 
   <script src="/index.js"></script>
 </body>
+
 </html>

@@ -1,33 +1,34 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function emptyField (firstname,lastname,emailaddress,password) {
+const btn=document.querySelector('.claim')
+const inputs=document.querySelectorAll('.forminput')
+const labels=document.querySelectorAll('.warning')
+const email=document.querySelector('.email')
+const emptyFeild =()=>{
     
+    for (const item of inputs ){
+    if (item.value <1) {
+        item.classList.toggle('inputError')
+    
+
+    }
+}
+for (const item of labels ){
    
-//         if (firstname==='' ){
-//             firstName.classlist.add('inputError')
-//         }
-//         lastname===''
-//          emailaddress===''
-//          password===''
+    item.classList.toggle('hidden')
+
+}
+if ( email.placeholder==='Email Address') {
             
-           
-//         }
-        
-//     }
+    email.placeholder='email@example/com'   
+} else {
+    email.placeholder='Email Address'
+}
+
+    }
+
+   
 
 
-
+btn.addEventListener('click',emptyFeild)
 
 
 
