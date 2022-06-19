@@ -62,7 +62,7 @@ h5{
    padding: 0 35px;
     text-align: center;
    width: 100%;
-   
+   margin: 50px auto;
 }
 
 /* header text */
@@ -189,8 +189,7 @@ body{
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        margin: 100px;
-        width: fit-content;
+        margin: 100%;
        gap: 76px;
     
        
